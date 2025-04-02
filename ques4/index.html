@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+
+        <!-- Task List -->
+        <h2>Tasks</h2>
+        <div id="loading">Loading tasks...</div>
+        <ul id="task-list"></ul>
+
+        <!-- Edit Task Modal -->
+        <div id="edit-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2>Edit Task</h2>
+                <input type="text" id="edit-title" placeholder="Task Title">
+                <select id="edit-status">
+                    <option value="Pending">Pending</option>
+                    <option value="Completed">Completed</option>
+                </select>
+                <button id="save-edit">Save Changes</button>
+                <button id="cancel-edit">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
