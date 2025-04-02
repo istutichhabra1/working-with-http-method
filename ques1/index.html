@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Search</h1>
+        <div class="filters">
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="books">Books</option>
+            </select>
+
+            <label for="min-price">Min Price:</label>
+            <input type="number" id="min-price" placeholder="Min Price">
+
+            <label for="max-price">Max Price:</label>
+            <input type="number" id="max-price" placeholder="Max Price">
+
+            <button id="search-btn">Search</button>
+        </div>
+
+        <div id="loading" class="hidden">Loading...</div>
+        <div id="error" class="hidden">Failed to fetch data. Try again.</div>
+
+        <div id="products" class="products-grid"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
